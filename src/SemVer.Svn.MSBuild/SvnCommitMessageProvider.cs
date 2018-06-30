@@ -28,10 +28,10 @@ namespace SemVer.Svn.MSBuild
         }
       }
 
-      if (svnWorkingCopyVersion.Modified)
-      {
-        throw new InvalidOperationException($"{this.Path} has uncommitted changes.");
-      }
+      //if (svnWorkingCopyVersion.Modified)
+      //{
+      //  throw new InvalidOperationException($"{this.Path} has uncommitted changes.");
+      //}
 
       Collection<SvnLogEventArgs> logItems;
       using (var svnClient = new SvnClient())
